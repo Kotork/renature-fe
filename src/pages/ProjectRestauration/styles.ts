@@ -13,23 +13,17 @@ export const Info = styled.div`
   }
 
   div {
-    margin-top: 4rem;
-  }
-`
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-export const Images = styled.div`
-  margin-top: 4rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  .verticalImg {
-    height: 30vh;
-    width: auto;
+    img {
+      width: 50%;
+      height: auto;
+    }
   }
 
-  .horizontalImg {
-    width: 40%;
-    height: auto;
+  p {
+    margin-top: 2rem;
   }
 `

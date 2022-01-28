@@ -26,7 +26,7 @@ export const Signin: React.FC<IProps> = ({ isSignin, setIsSignin }) => {
   return (
     <Container>
       <Form onSubmit={ handleSubmit(onSubmit) }>
-        <h1>Login</h1>
+        <h1>Log in</h1>
         <FormGroup>
           <TextField
             label='Email'

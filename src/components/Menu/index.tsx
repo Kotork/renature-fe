@@ -8,8 +8,7 @@ import { openMenu, closeMenu } from "../../store/actions";
 import { IProps, IStateMenu, IStateAuthUser } from "./interface";
 
 // COMPONENTS
-import { Logo } from '../Logo'
-import { Signin } from '../'
+import { Logo, Signin, Signup } from '../'
 
 // STYLES
 import { Container, OpenedMenu, MenuNav, StyledIcon } from "./styles";
@@ -30,7 +29,11 @@ export const Menu: React.FC<IProps> = () => {
         <a href="/">
           <Logo type="horizontal" />
         </a>
-        {!authUser && <Signin setIsSignin={setIsSignin} isSignin={isSignin} />}
+        <div>
+          {!authUser && (
+            isSignin ? <Signin setIsSignin={setIsSignin} isSignin={isSignin} /> : <Signup setIsSignin={setIsSignin} isSignin={isSignin} />
+          )}
+        </div>
 
         <MenuNav>
           <a href="/project/location">O Projeto</a>

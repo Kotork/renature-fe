@@ -23,6 +23,10 @@ export const Form = styled.form`
   width: 30rem;
   margin-top: 4rem;
 
+  h1 {
+    margin-bottom: 1rem;
+  }
+
   div {
     margin-bottom: 1rem;
     font-size: 1.4rem;

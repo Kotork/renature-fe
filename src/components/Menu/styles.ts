@@ -35,7 +35,7 @@ export const OpenedMenu = styled.div`
   flex-direction: column;
   align-items: center;
 
-  div:first-child {
+  a:first-child {
     text-align: center;
     margin-top: 4rem;
   }

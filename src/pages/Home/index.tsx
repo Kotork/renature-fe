@@ -29,7 +29,7 @@ const HomePage: React.FC<IPage> = props => {
 
   return (
     <>
-      <Project>
+      <Project href="/project/location">
         <Header2>O Projeto</Header2>
       </Project>
 

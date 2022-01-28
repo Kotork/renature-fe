@@ -40,8 +40,8 @@ const ProjectLayout: React.FC<IPage> = props => {
         <Informations>
           <Title>Informações</Title>
           <a href="/project/location"><IconLocation active={ page === 'location' }/></a>
-          <a href="/project/leaf"><IconLeaf active={ page === 'leaf' }/></a>
-          <a href="/project/tree"><IconTree active={ page === 'tree' }/></a>
+          <a href="/project/overview"><IconLeaf active={ page === 'overview' }/></a>
+          <a href="/project/restauration"><IconTree active={ page === 'restauration' }/></a>
           <a href="/project/finantials"><IconEuro active={ page === 'finantials' }/></a>
         </Informations>
 

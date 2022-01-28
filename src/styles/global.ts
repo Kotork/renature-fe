@@ -10,8 +10,8 @@ export default createGlobalStyle`
     --blue: #22293c;
     --red: #c9050d;
     --yellow: #ffd505;
-    --header1: "26px";
-    --header2: "22px";
+    --header1: 22px;
+    --header2: 18px;
   }
 
   // Scrollbar styles
