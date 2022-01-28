@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
 import { SubmitHandler, useForm } from 'react-hook-form';
-import { Button, FormControl, FormGroup, OutlinedInput, IconButton, InputLabel, FormHelperText, TextField, InputAdornment, Grid } from '@mui/material';
+import { Button, FormControl, FormGroup, OutlinedInput, IconButton, InputLabel, FormHelperText, TextField, InputAdornment } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
-
-// ACTIONS
-import { openMenu, closeMenu } from "../../store/actions";
 
 // INTERFACES
 import { IProps, IForm } from "./interface";
@@ -14,9 +10,8 @@ import { IProps, IForm } from "./interface";
 import { Container, Form } from "./styles";
 
 export const Signup: React.FC<IProps> = ({ isSignin, setIsSignin }) => {
-  const dispatch = useDispatch();
   const [showPassword, setShowPassword] = useState(false)
-  const { register, handleSubmit, watch, formState: { errors }} = useForm<IForm>()
+  const { register, handleSubmit, formState: { errors }} = useForm<IForm>()
 
   const onSubmit: SubmitHandler<IForm> = data => {
     console.log(data)

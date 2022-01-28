@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface IPreview {
+  thumb: string;
+}
+
 export const Season = styled.div`
   grid-area: serie;
   background-color: var(--blue);
@@ -10,7 +14,7 @@ export const Season = styled.div`
 `
 
 export const Preview = styled.div`
-  background-image: url('../images/webserie.jpg');
+  background-image: url('../images/series.jpg');
   background-size: cover;
   filter: brightness(60%);
   width: 30rem;

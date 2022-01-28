@@ -16,7 +16,7 @@ import { Container, Form } from "./styles";
 export const Signin: React.FC<IProps> = ({ isSignin, setIsSignin }) => {
   const dispatch = useDispatch();
   const [showPassword, setShowPassword] = useState(false)
-  const { register, handleSubmit, watch, formState: { errors }} = useForm<IForm>()
+  const { register, handleSubmit, formState: { errors }} = useForm<IForm>()
 
   const onSubmit: SubmitHandler<IForm> = data => {
     console.log(data)

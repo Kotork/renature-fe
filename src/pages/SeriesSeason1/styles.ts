@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-interface IPreview {
-  thumb: string;
-}
-
 export const Season = styled.div`
   grid-area: serie;
   background-color: var(--blue);
