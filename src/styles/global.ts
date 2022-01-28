@@ -6,6 +6,10 @@ export default createGlobalStyle<{theme: ThemeType }>`
   :root {
     --text-font: 'Roboto';
     --title-font: 'Roboto';
+    --green: #106f2b;
+    --blue: #22293c;
+    --red: #c9050d;
+    --yellow: #ffd505;
   }
 
   // Scrollbar styles
