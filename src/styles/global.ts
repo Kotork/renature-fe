@@ -10,6 +10,8 @@ export default createGlobalStyle<{theme: ThemeType }>`
     --blue: #22293c;
     --red: #c9050d;
     --yellow: #ffd505;
+    --header1: "26px";
+    --header2: "22px";
   }
 
   // Scrollbar styles
