@@ -33,7 +33,7 @@ const HomePage: React.FC<IPage> = props => {
         <Header2>O Projeto</Header2>
       </Project>
 
-      <Series>
+      <Series href="/series/season-1">
         <Header2>A série</Header2>
       </Series>
 

@@ -17,13 +17,17 @@ export const Header = styled.div`
   grid-area: header;
   padding: 10rem 4rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   h1 {
     text-transform: uppercase;
     color: white;
     font-weight: bold;
   }
-`
 
+  p {
+    color: white;
+  }
+`
