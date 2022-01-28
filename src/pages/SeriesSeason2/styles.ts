@@ -14,7 +14,7 @@ export const Season = styled.div`
 `
 
 export const Preview = styled.div`
-  background-image: url('../images/series.jpg');
+  background-image: url('../images/webserie.jpg');
   background-size: cover;
   filter: brightness(60%);
   width: 30rem;

@@ -8,9 +8,6 @@ import logging from "./config/logging";
 // INTERFACES
 import { AppProps } from "./interfaces/app";
 
-// CONTEXT
-import { useThemeContext } from "./context/themeContext";
-
 // ROUTES
 import Router from "./routes";
 

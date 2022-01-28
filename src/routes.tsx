@@ -15,6 +15,7 @@ import ProjectOverviewPage from "./pages/ProjectOverview";
 import ProjectRestaurationPage from "./pages/ProjectRestauration";
 import ProjectFinantialsPage from "./pages/ProjectFinantials";
 import SeasonOnePage from "./pages/SeriesSeason1";
+import SeasonTwoPage from "./pages/SeriesSeason2";
 
 const Router: React.FC = () => {
   const navigate = useNavigate();
@@ -58,6 +59,7 @@ const Router: React.FC = () => {
 
       <Route path="/series/*" element={<SerieLayout name="Main Layout" />}>
         <Route path="season-1" element={<SeasonOnePage name="Season One" />} />
+        <Route path="season-2" element={<SeasonTwoPage name="Season Two" />} />
       </Route>
     </Routes>
   );
