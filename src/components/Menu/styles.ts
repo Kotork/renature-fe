@@ -32,9 +32,11 @@ export const OpenedMenu = styled.div`
   left: 0;
   background-color: #fff;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
   div:first-child {
     text-align: center;
-    margin-top: 4rem;  
+    margin-top: 4rem;
   }
 `

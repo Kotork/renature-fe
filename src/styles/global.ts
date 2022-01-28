@@ -5,7 +5,7 @@ export default createGlobalStyle<{theme: ThemeType }>`
   // FONTS
   :root {
     --text-font: 'Roboto';
-    --title-font: 'Roboto',;
+    --title-font: 'Roboto';
   }
 
   // Scrollbar styles
