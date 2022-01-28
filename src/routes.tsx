@@ -4,11 +4,13 @@ import { useNavigate } from 'react-router-dom';
 
 //LAYOUTS
 import MainLayout from './layouts/Main';
+import ProjectLayout from './layouts/Project'
 
 // PAGES
 import AboutPage from "./pages/About";
 import HomePage from "./pages/Home";
 import Login from './pages/Login';
+import ProjectPage from "./pages/Project"
 
 const Router: React.FC = () => {
   const navigate = useNavigate();
@@ -22,13 +24,18 @@ const Router: React.FC = () => {
   }, [])
 
     return(
-        <Routes>
-          <Route path="/*" element={<MainLayout name="Main Layout" />}>
-            <Route path='' element={<HomePage name="Home Page" />} />
-          </Route>
-          <Route path='/about' element={<AboutPage name="About Page" />} />
-          <Route path='/login' element={<Login />} />
-        </Routes>
+      <Routes>
+        <Route path="/*" element={<MainLayout name="Main Layout" />}>
+          <Route path='' element={<HomePage name="Home Page" />} />
+        </Route>
+
+        <Route path="/project" element={<ProjectLayout name="Project Layout" />}>
+          <Route path='' element={<ProjectPage name="Project Page" />} />
+        </Route>
+
+        <Route path='/about' element={<AboutPage name="About Page" />} />
+        <Route path='/login' element={<Login />} />
+      </Routes>
     )
 }
 

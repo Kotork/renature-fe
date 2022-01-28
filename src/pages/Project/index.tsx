@@ -16,10 +16,10 @@ import Modal from "../../components/Modal";
 import { openModalRedux } from '../../store/actions/modalAction'
 
 //STYLES
-import { Project, Series, Volunteer, Header2 } from "./styles";
+import { Info } from "./styles";
 
 
-const HomePage: React.FC<IPage> = props => {
+const ProjectPage: React.FC<IPage> = props => {
   // DISPATCH REDUX
   const dispatch = useDispatch();
 
@@ -29,19 +29,9 @@ const HomePage: React.FC<IPage> = props => {
 
   return (
     <>
-      <Project>
-        <Header2>O Projeto</Header2>
-      </Project>
-
-      <Series>
-        <Header2>A série</Header2>
-      </Series>
-
-      <Volunteer>
-        <Header2>Voluntaria-te</Header2>
-      </Volunteer>
+      <Info></Info>
     </>
   )
 }
 
-export default HomePage
+export default ProjectPage
