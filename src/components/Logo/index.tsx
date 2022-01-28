@@ -11,7 +11,7 @@ import { IProps } from "./interface";
 import { Container, Image } from "./styles";
 
 // IMAGES
-const horizontalLogo = require('../../assets/images/logo.png');
+import horizontalLogo from '../../assets/images/logo.png'
 
 export const Logo: React.FC<IProps> = ({ type }) => {
 

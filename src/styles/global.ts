@@ -1,11 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
-import { ThemeType } from './theme'
 
-export default createGlobalStyle<{theme: ThemeType }>`
+export default createGlobalStyle`
   // FONTS
   :root {
     --text-font: 'Roboto';
     --title-font: 'Roboto';
+    --light-gray: #f2f2f2;
     --green: #106f2b;
     --blue: #22293c;
     --red: #c9050d;
@@ -21,7 +21,7 @@ export default createGlobalStyle<{theme: ThemeType }>`
   }
 
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px ${({ theme }) => theme.lightGray };
+    box-shadow: inset 0 0 5px var(--light-gray);
     border-radius: 10px;
   }
 
@@ -31,7 +31,7 @@ export default createGlobalStyle<{theme: ThemeType }>`
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: ${({ theme }) => theme.lightGray };
+    background: var(--light-gray);
   }
 
   // Global Styles

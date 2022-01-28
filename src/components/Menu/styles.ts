@@ -40,3 +40,19 @@ export const OpenedMenu = styled.div`
     margin-top: 4rem;
   }
 `
+
+export const MenuNav = styled.div`
+  margin-top: 8rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    opacity: .8;
+  }
+`

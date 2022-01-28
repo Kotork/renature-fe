@@ -1,9 +1,10 @@
 import { createStore, combineReducers, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
-import { menu, modal } from './reducers';
+import { auth, menu, modal } from './reducers';
 
 const reducers = combineReducers({
+    auth,
     menu,
     modal
 })

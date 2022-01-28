@@ -8,3 +8,12 @@ export interface IStateMenu{
     handleClick?: () => void;
   }
 }
+
+export interface IStateAuthUser{
+  auth: {
+    user: {
+      email: string,
+      password: string
+    }
+  }
+}

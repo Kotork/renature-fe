@@ -16,10 +16,9 @@ import Router from "./routes";
 
 // STYLES
 import GlobalStyle from "./styles/global";
-import { lightTheme, darkTheme } from "./styles/theme";
+import theme from "./styles/theme";
 
 const Application: React.FC<AppProps> = (props) => {
-  const { theme } = useThemeContext();
   // const navigate = useNavigate();
 
   useEffect(() => {
@@ -27,7 +26,7 @@ const Application: React.FC<AppProps> = (props) => {
   }, [])
 
   return (
-    <ThemeProvider theme={ theme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <BrowserRouter>
         <Router />
