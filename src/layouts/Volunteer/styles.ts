@@ -17,7 +17,7 @@ export const Header = styled.div`
   padding: 10rem 8rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
 
   h1 {
@@ -25,18 +25,39 @@ export const Header = styled.div`
     color: white;
     font-weight: bold;
   }
+`
 
-  p {
+export const Volunteer = styled.div`
+  background-image: url('../images/project.png');
+  background-size: cover;
+  margin-top: 4rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 8px;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all .3s ease-in-out;
+
+  span {
     color: white;
+    text-transform: uppercase;
+    font-size: var(--header2);
+    margin-bottom: 2rem;
+    display: none;
   }
 
-  .MuiFormControl-root {
-    background-color: var(--green);
-    border-radius: 5px;
+  button {
+    display: none;
+  }
 
-    .MuiFilledInput-root {
-      font-size: 1.6rem;
-      color: white;
+  :hover {
+
+    span,
+    button {
+      display: block;
     }
   }
 `

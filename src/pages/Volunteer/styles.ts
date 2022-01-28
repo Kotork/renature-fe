@@ -1,54 +1,37 @@
 import styled from 'styled-components';
 
-interface IPreview {
-  thumb: string;
-}
-
-export const Season = styled.div`
-  grid-area: serie;
-  background-color: var(--blue);
+export const Volunteer = styled.div`
+  grid-area: volunteer;
+  background-color: white;
   padding: 4rem 8rem;
 
-  display: flex;
-  justify-content: flex-start;
-`
+  h2 {
+    font-size: var(--header1);
+    margin-bottom: 4rem;
+  }
 
-export const Preview = styled.div`
-  background-image: url('../images/series.jpg');
-  background-size: cover;
-  filter: brightness(60%);
-  width: 30rem;
-  height: 50rem;
-  border-radius: 8px;
-  position: relative;
-  margin-right: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 4rem;
+  h3 {
+    font-size: var(--header2);
+    margin-bottom: 2rem;
+  }
 
-  :hover {
-    filter: none;
-    cursor: pointer;
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+  }
 
-    h2, h3 {
-      display: block;
+  div {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
     }
   }
-`
 
-export const Title = styled.h2`
-  display: none;
-  color: white;
-  text-transform: uppercase;
-  font-size: var(--header1);
-`
-
-export const Episode = styled.h3`
-  display: none;
-  color: white;
-  font-size: var(--header2);
-  opacity: .9;
-
+  button {
+    margin-top: 8rem;
+    font-size: 1.6rem;
+  }
 `

@@ -18,7 +18,7 @@ const HomePage: React.FC<IPage> = props => {
         <Header2>A série</Header2>
       </Series>
 
-      <Volunteer>
+      <Volunteer href="/volunteer">
         <Header2>Voluntaria-te</Header2>
       </Volunteer>
     </>

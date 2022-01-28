@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/Main";
 import ProjectLayout from "./layouts/Project";
 import SerieLayout from "./layouts/Series";
+import VolunteerLayout from "./layouts/Volunteer";
 
 // PAGES
 import HomePage from "./pages/Home";
@@ -15,6 +16,7 @@ import ProjectRestaurationPage from "./pages/ProjectRestauration";
 import ProjectFinantialsPage from "./pages/ProjectFinantials";
 import SeasonOnePage from "./pages/SeriesSeason1";
 import SeasonTwoPage from "./pages/SeriesSeason2";
+import VolunteerPage from "./pages/Volunteer";
 
 const Router: React.FC = () => {
   return (
@@ -34,6 +36,10 @@ const Router: React.FC = () => {
       <Route path="/series/*" element={<SerieLayout name="Main Layout" />}>
         <Route path="season-1" element={<SeasonOnePage name="Season One" />} />
         <Route path="season-2" element={<SeasonTwoPage name="Season Two" />} />
+      </Route>
+
+      <Route path="/volunteer/*" element={<VolunteerLayout name="Main Layout" />}>
+        <Route path="" element={<VolunteerPage name="Volunteer" />} />
       </Route>
     </Routes>
   );

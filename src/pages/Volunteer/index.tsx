@@ -1,40 +1,43 @@
 import React from "react";
+import { Button } from '@mui/material';
 
 // INTERFACES
 import IPage from "../../interfaces/page";
 
 //STYLES
-import { Season, Preview, Title, Episode } from "./styles";
+import { Volunteer } from "./styles";
 
-const SeasonOnePage: React.FC<IPage> = props => {
+const VolunteerPage: React.FC<IPage> = props => {
   return (
-    <Season>
-      <Preview>
-        <Title>The Why</Title>
-        <Episode>Episódio 1</Episode>
-      </Preview>
+    <Volunteer>
+      <h2>Ajuda-nos a dar uma nova vida a Monchique</h2>
 
-      <Preview>
-        <Title>The Who</Title>
-        <Episode>Episódio 2</Episode>
-      </Preview>
+      <p>
+        Os voluntários do projeto Renature Monchique fazem uma enorme diferença na reconstrução desta serra e no apoio aos demais residentes e comerciantes desta zona
+      </p>
 
-      <Preview>
-        <Title>The How - Part 1</Title>
-        <Episode>Episódio 3</Episode>
-      </Preview>
+      <p>
+        Podem faltar recursos técnicos ou financeiros, mas o maior contributo que nos podes dar é a tua contribuição, para que possamos continuar a lutar por uma boa causa.
+      </p>
 
-      <Preview>
-        <Title>The How - Part 2</Title>
-        <Episode>Episódio 4</Episode>
-      </Preview>
+      <p>
+        Junte-te a nós!
+      </p>
 
-      <Preview>
-        <Title>The Vision</Title>
-        <Episode>Episódio 5</Episode>
-      </Preview>
-    </Season>
+      <h3>Porquê ajudar</h3>
+      <div>
+        <span>- Contribuis para a proteção do ambiente;</span>
+        <span>- Adquires novos conhecimentos;</span>
+        <span>- Trabalhas em equipa;</span>
+        <span>- Fazes novas amizades;</span>
+        <span>- Ajudas os outros;</span>
+        <span>- Tens novas experiências</span>
+        <span>- E muito mais</span>
+      </div>
+
+      <Button type="button" variant='contained' fullWidth color='success'>Quero ser voluntário</Button>
+    </Volunteer>
   )
 }
 
-export default SeasonOnePage
+export default VolunteerPage
