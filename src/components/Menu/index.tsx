@@ -37,7 +37,7 @@ export const Menu: React.FC<IProps> = () => {
 
         <MenuNav>
           <a href="/project/location">O Projeto</a>
-          <a href="/series">A Série</a>
+          <a href="/series/season-1">A Série</a>
           <a href="/volunteer">Voluntaria-te</a>
         </MenuNav>
       </OpenedMenu>}

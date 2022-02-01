@@ -19,14 +19,14 @@ const SerieLayout: React.FC<IPage> = props => {
   const [season, setSeason] = useState('1');
 
   useEffect(() => {
-    season === '1' ? navigate('/series/season-1') : navigate('/series/season-1')
+    season === '1' ? navigate('/series/season-1') : navigate('/series/season-2')
   }, [season, navigate])
 
   return (
     <Container>
       <Menu/>
 
-      <Header className="AQUI">
+      <Header>
         <h1>A Série</h1>
         <p>
           O projeto Renature Monchique pretende restaurar os principais habitats da rede Natura 2000, contribuir para o bem-estar da comunidade e mitigar os futuros impactos das alterações climáticas no território de Monchique, área afetada pelo maior incêndio da Europa ocorrido em 2018.
@@ -40,8 +40,8 @@ const SerieLayout: React.FC<IPage> = props => {
             label="Temporada"
             onChange={ (event: SelectChangeEvent) => setSeason(event.target.value) }
           >
-            <MenuItem value={1}>Temporada 1</MenuItem>
-            <MenuItem value={2}>Temporada 2</MenuItem>
+            <MenuItem value='1'>Temporada 1</MenuItem>
+            <MenuItem value='2'>Temporada 2</MenuItem>
           </Select>
         </FormControl>
       </Header>
